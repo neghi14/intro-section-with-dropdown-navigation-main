@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-:root{
+:root {
     --color-almost-White: hsl(0, 0%, 98%);
     --color-Medium-Gray: hsl(0, 0%, 41%);
     --color-Almost-Black: hsl(0, 0%, 8%);
@@ -16,71 +16,103 @@
     --weight-medium: 500;
     --weight-bold: 700;
 
-    --font-family : 'Epilogue', sans-serif;
+    --font-family: 'Epilogue', sans-serif;
 }
 
-body{
+body {
     font-family: var(--font-family);
     background-color: var(--color-almost-White);
 }
 
-.nav-bar{
+.nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 40px;
 }
 
-.nav-items{
+.nav-items {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 10px;
 }
 
-.logo{
+.logo {
     font-size: 54px;
     color: var(--color-Almost-Black);
     text-decoration: none;
     font-weight: var(--weight-bold);
 }
-.nav-items ul li{
+
+.nav-ul li {
     list-style: none;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 30px;
 }
-.nav-items ul li a{
+
+.nav-ul li a {
     font-size: var(--font-paragraph);
     color: var(--color-Medium-Gray);
     text-decoration: none;
     font-weight: var(--weight-medium);
 }
-
-.nav-btn{
+.nav-ul li a:hover{
+    color: var(--color-Almost-Black);
+}
+.nav-btn {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.nav-btn a{
-   text-decoration: none;
-   color: var(--color-Medium-Gray);
-   font-weight: var(--weight-medium); 
+
+.nav-btn a {
+    text-decoration: none;
+    color: var(--color-Medium-Gray);
+    font-weight: var(--weight-medium);
+}
+.nav-btn a:hover{
+    color: var(--color-Almost-Black);
+}
+.nav-popup{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    background-color: white;
+    gap: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.nav-popup li{
+    margin: 2px 0px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.nav-popup-hidden{
+    display: none;
+}
+.nav-popup li a{
+    font-size: 14px;
+    font-weight: var(--weight-medium);
 }
 
-.btn{
+.btn {
     padding: 10px 20px;
     border: 2px solid var(--color-Medium-Gray);
     border-radius: 15px;
 }
 
-.hero{
+.hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px 200px;
     gap: 150px;
 }
-.hero-left{
+
+.hero-left {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -88,36 +120,41 @@ body{
     gap: 40px;
 }
 
-.hero-left h1{
+.hero-left h1 {
     font-size: 72px;
     color: var(--color-Almost-Black);
     font-weight: var(--weight-bold);
 }
 
-.hero-left p{
+.hero-left p {
     font-size: var(--font-paragraph);
     color: var(--color-Medium-Gray);
     font-weight: var(--weight-medium);
 }
-.hero-btn{
+
+.hero-btn {
     padding: 15px 20px;
     background-color: var(--color-Almost-Black);
-    border-radius: 15px; 
+    border-radius: 15px;
     color: var(--color-almost-White);
     text-decoration: none;
+    transition: background-color .3s ease-in;
 }
 
-.hero-left-img{
+.hero-btn:hover {
+    background-color: hsl(0, 2%, 20%);
+}
+
+.hero-left-img {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
-.hero-right{
 
-}
+.hero-right {}
 
-.hero-right img{
+.hero-right img {
     /* height: 700px; */
     width: 500px;
 }
