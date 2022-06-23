@@ -7,6 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/styles.css/main.css">
 
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
@@ -24,44 +25,44 @@
 </head>
 
 <body>
-
   <header>
-    <nav>
-      <div>
-        <a href="#">snap</a>
+    <nav class="nav-bar">
+      <div class="nav-items">
+        <a class="logo" href="#">snap</a>
         <ul>
-          <li>Features</li>
-          <li>Company</li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Company</a></li>
           <li><a href="#">Careers</a></li>
-          <li><a href="#"></a>About</li>
+          <li><a href="#">About</a></li>
         </ul>
       </div>
-      <div>
+      <div class="nav-btn">
         <a href="#">login</a>
         <a class="btn" href="#">Register</a>
       </div>
     </nav>
   </header>
   <main>
-    <div>
-      <section>
+    <div class="hero">
+      <section class="hero-left">
         <h1>
-          Make remote work
+          Make <br>
+          remote work
         </h1>
         <p>
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
-        <a href="#">Learn more</a>
-        <div>
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
+        <a class="hero-btn" href="#">Learn more</a>
+        <div class="hero-left-img">
+          <img src="/images/client-databiz.svg" alt="client-databiz">
+          <img src="/images/client-audiophile.svg" alt="client-audiophile">
+          <img src="/images/client-meet.svg" alt="client-meet">
+          <img src="/images/client-maker.svg" alt="client-maker">
         </div>
       </section>
-      <section>
-        <img src="" alt="">
+      <section class="hero-right">
+        <img src="/images/image-hero-desktop.png" alt="image-hero-desktop">
       </section>
     </div>
   </main>
